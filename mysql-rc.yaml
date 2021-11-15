@@ -5,7 +5,7 @@ metadata:
 spec:
   replicas: 1
   selector:
-    name: mysql
+    app: mysql
   template:
     metadata:
       labels:
