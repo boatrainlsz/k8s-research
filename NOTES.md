@@ -17,3 +17,5 @@ kubectl apply -f <file>
 ```shell
 kubectl delete -f <file>
 ```
+
+4. volumes是pod级别的，容器通过volumeMounts挂载到pod中
