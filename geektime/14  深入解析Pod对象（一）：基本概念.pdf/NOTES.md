@@ -9,7 +9,7 @@ Kubernetes（容器环境）的迁移，更加平滑。而如果你能把 Pod �
 ### 几个Pod字段：
 | 字段名       | 作用                    | Code snippet                                                 | 说明                                                         |
 | ------------ | ----------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| NodeSelector | 将 Pod 与 Node 进行绑定 | <img src="https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/image-20220306223246577.png" alt="image-20220306223246577" style="zoom: 50%;" /> | 着这个 Pod 永远只能运行在携带了“disktype: ssd”标签（Label）的节点上；否则，它将调度失败。 |
+| NodeSelector | 将 Pod 与 Node 进行绑定 | ![carbon](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/carbon.svg) | 着这个 Pod 永远只能运行在携带了“disktype: ssd”标签（Label）的节点上；否则，它将调度失败。 |
 |              |                         |                                                              |                                                              |
 |              |                         |                                                              |                                                              |
 
