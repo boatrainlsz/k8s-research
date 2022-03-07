@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  hostNetwork: true
+  hostIPC: true
+  hostPID: true
+  containers:
+    - name: nginx
+      image: nginx:1.15.8
+    - name: shell
+      image: busybox
+      stdin: true
+      tty: true
+
