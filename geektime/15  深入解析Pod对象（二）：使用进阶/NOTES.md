@@ -24,3 +24,20 @@ readinessProbe：虽然它的用法与 livenessProbe类似，但作用却大不�
 ### PodPreset（Pod 预设置）
 
 开发人员只需要提交一个基本的、非常简单的 Pod YAML，Kubernetes 就可以自动给对应的 Pod 对象加上其他必要的信息，比如 labels，annotations，volumes 等等。而这些信息，可以是运维人员事先定义好的。这么一来，开发人员编写 Pod YAML 的门槛，就被大大降低了。
+
+开发人员定义的Pod（pod.yaml）：
+
+![carbon (4)](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/carbon%20(4).svg)
+
+运维人员定义的Pod（pod-preset.yaml）：
+
+![carbon (5)](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/carbon%20(5).svg)
+
+pod-preset.yaml + pod.yaml = 生产可用的Pod：
+
+```shell
+ kubectl create -f preset.yaml
+ kubectl create -f pod.yaml
+ kubectl get pod website -o yaml
+```
+
