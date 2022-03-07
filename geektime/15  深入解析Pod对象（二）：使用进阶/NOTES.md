@@ -41,3 +41,4 @@ pod-preset.yaml + pod.yaml = 生产可用的Pod：
  kubectl get pod website -o yaml
 ```
 
+需要说明的是，PodPreset 里定义的内容，只会在 Pod API 对象被创建之前追加在这个对象本身上，而不会影响任何 Pod 的控制器的定义。比如，我们现在提交的是一个 nginx-deployment，那么这个 Deployment 对象本身是永远不会被PodPreset 改变的，被修改的只是这个 Deployment 创建出来的所有 Pod。这一点请务必区分清楚。
