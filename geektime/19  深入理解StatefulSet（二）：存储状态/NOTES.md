@@ -13,3 +13,5 @@
 #### 第二步：开发人员在应用的 Pod 中，声明使用这个 PVC：
 
 ![carbon (3)](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203081329100.svg)
+
+即使 Pod 被删除，它所对应的 PVC 和 PV 依然会保留下来。所以当这个 Pod被重新创建出来之后，Kubernetes 会为它找到同样编号的 PVC，挂载这个 PVC 对应的Volume，从而获取到以前保存在 Volume 里的数据。
