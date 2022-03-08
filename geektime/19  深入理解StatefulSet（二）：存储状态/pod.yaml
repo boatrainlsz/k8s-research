@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod
+spec:
+  containers:
+    - name: pod-container
+      image: busybox
+      command:
+        - sh
+        - -c
+        - echo "hello world"
+      volumeMounts:
+        - name: pod-volume
+          mountPath: /mnt/pod
+  volumes:
+    - name: pod-volume
+      persistentVolumeClaim:
+        claimName: pvc
