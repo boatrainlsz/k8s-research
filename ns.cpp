@@ -20,7 +20,7 @@ char *const container_args[] = {
 
 int container_main(void *args) {
     printf("Container - inside the container! \n");
-    execve(container_args[0], container_args);
+    execv(container_args[0], container_args);
     printf("Something is wrong! \n");
     return 1;
 }
