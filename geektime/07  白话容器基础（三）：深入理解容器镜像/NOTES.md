@@ -4,7 +4,7 @@ https://unix.stackexchange.com/questions/3192/what-is-meant-by-mounting-a-device
 
 #### Mount Namespace
 
-Mount Namespace 修改的，是容器进程对文件系统“挂载点”的认知。
+Mount Namespace 修改的是容器进程对文件系统“挂载点”的认知。
 
 Mount Namespace 跟其他 Namespace 的使用略有不同的地方：它对容器进程视图的改变，一定是伴随着挂载操作（mount）才能生效。
 
@@ -25,5 +25,5 @@ docker image inspect ubuntu:latest
 
 ![carbon](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203101551993.svg)
 
-使用联合文件系统将这些层挂载到一个统一的挂载点(/var/lib/docker/aufs/mnt/)上：
+使用联合文件系统将这些层挂载到一个统一的挂载点(/var/lib/docker/aufs/mnt/)上。
 
