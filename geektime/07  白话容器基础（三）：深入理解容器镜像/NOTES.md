@@ -27,3 +27,7 @@ docker image inspect ubuntu:latest
 
 使用联合文件系统将这些层挂载到一个统一的挂载点(/var/lib/docker/aufs/mnt/)上。
 
+#### 代码
+
+[](../../demo/ns.cpp)
+
