@@ -23,7 +23,7 @@ docker run -d ubuntu:latest sleep 3600
 docker image inspect ubuntu:latest
 ```
 
-
+![carbon](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203101551993.svg)
 
 使用联合文件系统将这些层挂载到一个统一的挂载点(/var/lib/docker/aufs/mnt/)上：
 
