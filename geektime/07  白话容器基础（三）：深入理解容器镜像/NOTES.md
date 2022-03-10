@@ -29,5 +29,5 @@ docker image inspect ubuntu:latest
 
 #### 代码
 
-[](../../demo/ns.cpp)
+[ns.cpp](../../demo/ns.cpp)
 
