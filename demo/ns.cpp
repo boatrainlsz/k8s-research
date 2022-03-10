@@ -20,6 +20,9 @@ char *const container_args[] = {
 
 int container_main(void *args) {
     printf("Container - inside the container! \n");
+    //https://man7.org/linux/man-pages/man2/mount.2.html
+    //https://unix.stackexchange.com/questions/136646/what-is-type-none-for-mount-points-and-why-are-mount-points-of-the-same-type-b
+    mount("none", "/tmp", "tmpfs", 0, "");
     execv(container_args[0], container_args);
     printf("Something is wrong! \n");
     return 1;

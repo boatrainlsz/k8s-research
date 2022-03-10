@@ -3,4 +3,4 @@ project(ebpf_research)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(k8s-research ns.cpp)
+add_executable(k8s-research demo/ns.cpp)
