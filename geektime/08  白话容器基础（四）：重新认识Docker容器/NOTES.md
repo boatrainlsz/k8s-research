@@ -7,3 +7,6 @@
    docker build -t helloworld .
    docker run -p 4000:80 helloworld
    ```
+
+#### docker exec 原理
+
