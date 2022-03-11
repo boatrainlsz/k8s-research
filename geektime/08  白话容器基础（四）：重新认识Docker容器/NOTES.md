@@ -10,3 +10,5 @@
 
 #### docker exec 原理
 
+就是加入了另一个进程的namespace，见：[setns.c](../../demo/geektime07/setns.c)
+
