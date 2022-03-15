@@ -20,15 +20,6 @@
 
 它被创建出来后，总是以两张虚拟网卡（Veth Peer）的形式成对出现的。并且，从其中一个“网卡”发出的数据包，可以直接出现在与它对应的另一张“网卡”上，哪怕这两个“网卡”在不同的 Network Namespace 里。这就使得 Veth Pair 常常被用作连接不同 Network Namespace 的“网线”。
 
-#### Veth Pair验证
+### docker网络原理图
 
-##### 启动docker容器并进入
-
-```shell
- docker run –d --name nginx-1 nginx
- docker exec -it nginx-1 /bin/bash
-```
-
-在容器里执行ifconfig：
-
-![carbon (1)](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203142254105.svg)
+![Step-by-Step Guide: Establishing Container Networking - DZone Cloud](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203152117240.png)
