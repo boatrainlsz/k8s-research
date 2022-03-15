@@ -22,6 +22,6 @@
 
 ### docker网络原理图
 
-![Step-by-Step Guide: Establishing Container Networking - DZone Cloud](https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203152117240.png)
+<img src="https://raw.githubusercontent.com/boatrainlsz/my-image-hosting/main/202203152117240.png" alt="Step-by-Step Guide: Establishing Container Networking - DZone Cloud" style="zoom:50%;" />
 
 原理：虚拟网卡插到网桥上后，虚拟网卡就被“剥夺”调用网络协议栈处理数据包的资格，从而“降”成为网桥上的一个端口。而这个端口唯一的作用，就是接收流入的数据包，然后把这些数据包的“生杀大权”（比如转发或者丢弃），全部交给对应的网桥。网桥扮演二层交换机的角色，使用ARP协议获取目的MAC地址，从而将数据包发出去。
